@@ -8,6 +8,14 @@ Temperature measurement plays an important role across various sectors including
 
 ---
 
+## 🚀 Project Objectives
+
+- To develop a circuit diagram for integrating the MAX6675 sensor to measure the temperature of objects (both contact and non-contact) and their surrounding environment.
+- To measure and record temperature data using the MAX6675 sensor.
+- To assess the performance of the MAX6675 thermocouple in comparison with other sensors performing similar temperature-measuring functions.
+
+---
+  
 ## 🧰 Components Used
 
 | **Component**           | **Purpose in the Project**                                                                 |
@@ -24,7 +32,7 @@ Temperature measurement plays an important role across various sectors including
 As established earlier, the purpose of this projecr was to evaluate the performance of the MAX6675 thermocouple sensor in measuring temperature in its immediate surrounding environment with real-time temperature display on an OLED screen. The sensor’s output was connected to the Arduino UNO micro-controller which then displayed the temperature readings on an OLED screen. The Circuit Diagram for the Setup is shown below:
 
 <p align="center">
-    <img src="race_ethcty_average_math_score_plot.png" alt="race_ethcty_average_math_score_plot" width="1500"/>
+    <img src="Circuit_Diagram.jpg" alt="Circuit_Diagram" width="1500"/>
     <br>
     <em> The Circuit Diagram of the Setup</em>
 </p>
@@ -38,10 +46,16 @@ jumper wires.
 - The 10k resistor is connected between the positive (+ve) and negative (-ve) terminals of 
 the thermocouple sensor. 
 
-AND the circuit works as follows: 
+### Working Principle of the Setup 
 
--  Arduino UNO reads the temperature from the MAX6675 sensor. 
--  The Arduino UNO then sends the read data to the OLED for display.
+The setup starts by measuring the temperature of its surrounding with the aid of the MAX 6675 thermocouple (sensor) afterwhich it sends a voltage signal proportional to the read temperature value via an analog pin (A0) to the Arduino microcontroller. The controller then reads the signal from the analog pin via an analog to digital converter (ADC) into a digital signal which is converted by the use of calibration into relative temperature reading. This value is then sent the OLED screen for display. A resistor is added to help regulate the current within the circuit.
+
+<p align="center">
+    <img src="Picture_of_the_Setup.png" alt="Picture_of_the_Setup" width="1500"/>
+    <br>
+    <em> Picture of the Setup</em>
+</p>
+
 
 ## Performance Evaluation
 To evaluate the effectivess of the setup
