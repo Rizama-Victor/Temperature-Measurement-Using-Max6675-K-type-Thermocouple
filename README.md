@@ -8,4 +8,13 @@ Temperature measurement plays an important role across various sectors including
 
 ---
 
-## Components Used
+## 🧰 Components Used
+
+| **Component**           | **Purpose in the Project**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------|
+| **MAX6675 Module**      | Measured temperature readings from the K-type thermocouple and converted them to digital form. |
+| **0.91-inch OLED Display** | Displayed the real-time temperature values clearly on the device.            |
+| **Arduino UNO Board**   | Served as the microcontroller responsible for processing sensor data and enabling the display. |
+| **Jumper Wires**        | Used for electrical connections between the MAX6675, OLED, and the Arduino board.          |
+| **Vero Board**          | Provided a small prototyping platform for organizing the circuit connections.     |
+| **Arduino IDE**         | Enabled writing, compiling, and uploading of the program code to the Arduino UNO.            |
