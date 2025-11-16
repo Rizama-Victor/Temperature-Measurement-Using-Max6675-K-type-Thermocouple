@@ -28,6 +28,8 @@ Temperature measurement plays an important role across various sectors including
 | **10k Resistor**        | Regulated current flow within the circuit to protect components from getting damaged. |
 | **Arduino IDE**         | Enabled writing, compiling, and uploading of the program code to the Arduino UNO.            |
 
+---
+
 ## Methodology
 As established earlier, the purpose of this projecr was to evaluate the performance of the MAX6675 thermocouple sensor in measuring temperature in its immediate surrounding environment with real-time temperature display on an OLED screen. The sensor’s output was connected to the Arduino UNO micro-controller which then displayed the temperature readings on an OLED screen. The Circuit Diagram for the Setup is shown below:
 
@@ -56,8 +58,34 @@ The setup starts by measuring the temperature of its surrounding with the aid of
     <em> Picture of the Setup</em>
 </p>
 
+---
 
 ## Performance Evaluation
-To evaluate the effectivess of the setup
-- Temperature values were recorded at specific time intervals to access the accuracy and responsiveness of the setup.
-- 
+To evaluate the effectivess of the setup, temperature values were recorded at specific time intervals to access the accuracy and responsiveness of the setup. Below is a graphical representation of the results obtained at various 
+time intervals.
+
+<p align="center">
+    <img src="Chart.png" alt="Chart" width="1500"/>
+    <br>
+    <em> Graphical Representation of the Recorded Results at Various Time Intervals</em>
+</p>
+
+The above chart shows the performance of the measuring device in effectively measuring temperature with about + or - 2 degree celsuius accuracy in comparison to standard measurements evident from the recorded values. We can thereby draw a conclusion that the inbuilt components for temperaure signal conditioning and analogue to digital (ADC) conversion of the measurements enabled consistency and gradual rise in temperature which aligned with the expected behaviour in a controlled environment setting. The sensor’s ability to capture such variations within short time intervals (and at various environmental scenarios) demonstrated its sensitivity , adaptability) and precision. 
+
+---
+
+## ⚠️ Disclaimer
+
+While the project successfully implemented temperature measurement using the MAX6675 sensor, a few areas were identified for potential improvement and future work:
+
+1. **Temperature Range:** The device measured temperatures reliably between 0°C and 1024°C. For applications requiring measurements beyond this range, future work could explore sensors or techniques that extend the measurable range.  
+
+2. **Measurement Precision:** The device had a fixed resolution of 0.25°C per bit with a 12-bit output. For tasks demanding higher precision, future studies could investigate sensors with finer resolution or advanced calibration methods.  
+3. **Environmental Sensitivity:** The sensor was sensitive to electrical or environmental noise, which could influence readings in noisy conditions. Future research could focus on noise-reduction techniques or shielding mechanisms to improve accuracy.  
+
+4. **Single-Point Measurement:** The system measured temperature at a single point. To capture data from multiple points simultaneously, future implementations could integrate additional sensors or a multi-channel setup.
+
+---
+
+
+
