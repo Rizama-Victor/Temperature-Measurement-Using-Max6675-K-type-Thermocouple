@@ -30,7 +30,7 @@ Temperature measurement plays an important role across various sectors including
 
 ---
 
-## Methodology
+## 📝 Methodology
 As established earlier, the purpose of this projecr was to evaluate the performance of the MAX6675 thermocouple sensor in measuring temperature in its immediate surrounding environment with real-time temperature display on an OLED screen. The sensor’s output was connected to the Arduino UNO micro-controller which then displayed the temperature readings on an OLED screen. The Circuit Diagram for the Setup is shown below:
 
 <p align="center">
@@ -60,7 +60,7 @@ The setup starts by measuring the temperature of its surrounding with the aid of
 
 ---
 
-## Performance Evaluation
+## 📈 Performance Evaluation
 To evaluate the effectivess of the setup, temperature values were recorded at specific time intervals to access the accuracy and responsiveness of the setup. Below is a graphical representation of the results obtained at various 
 time intervals.
 
