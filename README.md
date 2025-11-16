@@ -86,6 +86,6 @@ While the project successfully implemented temperature measurement using the MAX
 4. **Single-Point Measurement:** The system measured temperature at a single point. To capture data from multiple points simultaneously, future implementations could integrate additional sensors or a multi-channel setup.
 
 ---
-
-
+## 📌 Note
+The full program script can be accessed [**here**](program_code/program_code.ino)
 
