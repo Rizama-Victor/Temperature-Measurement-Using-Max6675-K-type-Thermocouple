@@ -88,6 +88,6 @@ While the project successfully implemented temperature measurement using the MAX
 ---
 ## 📌 Note
 
-The full program script can be accessed [**here**](program_code/program_code.ino)
+The full program script can be accessed [**here**](program_code/program_code.ino).
 
 ---
